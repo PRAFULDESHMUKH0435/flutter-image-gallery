@@ -56,58 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('All Album'),
-        actions: [
-          IconButton(
-            onPressed: () {
-              showDialog(
-                  context: context,
-                  builder: (context) {
-                    return AlertDialog(
-                      backgroundColor: GalleryTheme.primary,
-                      title: const Text(
-                        'Project Details',
-                        style: TextStyle(color: GalleryTheme.secondary),
-                      ),
-                      content: const Text.rich(
-                        TextSpan(
-                          children: [
-                            TextSpan(
-                              text: 'Project Name: Flutter Gallery\n',
-                              style: TextStyle(
-                                color: GalleryTheme.secondary,
-                                fontSize: 14,
-                              ),
-                            ),
-                            TextSpan(
-                              text: 'Created by: Daniel Remoquillo',
-                              style: TextStyle(
-                                color: GalleryTheme.secondary,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      actions: [
-                        TextButton(
-                          child: const Text(
-                            'CLOSE',
-                            style: TextStyle(color: GalleryTheme.secondary),
-                          ),
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                        ),
-                      ],
-                    );
-                  });
-            },
-            icon: const Icon(
-              Icons.info_outline,
-            ),
-          ),
-        ],
+        backgroundColor: Colors.pink,
+        title: const Text('HSN Gallery',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+
       ),
       body: Container(
         decoration: const BoxDecoration(

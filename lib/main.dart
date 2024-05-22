@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_gallery/components/gallery_theme.dart';
 import 'package:flutter_image_gallery/screens/home.dart';
+import 'package:flutter_image_gallery/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
           primarySwatch:
               GalleryTheme.buildMaterialColor(const Color(0xFF393E46)),
           fontFamily: 'DINRound'),
-      home: const HomeScreen(),
+      home: SplashScreen(),
+      //home: const HomeScreen(),
     );
   }
 }
